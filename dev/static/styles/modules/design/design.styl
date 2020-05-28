@@ -1,0 +1,44 @@
+.information-block
+
+	&__title
+		padding 41px 0 24px
+		font-size 1px
+		font-style normal
+		font-weight bold
+		font-family 'Roboto', sans-serif
+		line-height 28px
+		color: #142f4f
+
+	&__row
+		align-items start
+		padding-bottom 65px
+		display flex
+		justify-content space-between
+		@media screen and (max-width $grid-xs-max)
+			flex-direction column
+
+	&__text
+		text-align start
+		font-size 18px
+		line-height 21px
+		font-style normal
+		font-weight normal
+		font-family 'Roboto', sans-serif
+		color: #000
+		@media screen and (max-width $grid-lg-max)
+			font-size 16px
+			line-height 19px
+		@media screen and (max-width $grid-md-max)
+			font-size 14px
+			line-height 15px		
+
+	&__img
+		width 100%
+
+.col-one
+	@media screen and (max-width $grid-xs-max)
+		max-width 100%
+
+.col-two
+	@media screen and (max-width $grid-xs-max)
+		max-width 100%

@@ -1,0 +1,89 @@
+.header-top
+	background-repeat: no-repeat
+	background-color: #142f4f
+	display flex
+	justify-content center
+	align-items center
+	height 165px
+
+.col-4
+	display flex
+
+	&__first
+		justify-content flex-start
+		@media screen and (max-width $grid-xs-max)
+			justify-content center
+			padding-bottom 24px
+
+	&__center
+		justify-content flex-end
+
+		@media screen and (max-width $grid-xs-max)
+			justify-content center
+			padding-bottom 10px
+	
+	&__end
+		justify-content flex-end
+
+		@media screen and (max-width: $grid-md-max)
+			display none
+
+		@media screen and (max-width: $grid-lg-max)
+			justify-content center	
+
+		@media screen and (max-width: $grid-xs-max)
+			display block	
+
+.header-bottom
+	
+	&__row
+		text-align center
+		display flex
+		align-items center
+		padding 1.25em 0 1.25em
+		@media screen and (max-width: $grid-xs-max)
+			display block
+
+
+.phone-block
+	display flex
+	justify-content flex-end
+	padding-right 1em
+	align-items center
+	@media screen and (max-width: $grid-sm-max)
+		padding-right 0
+	
+	&__phone
+		font-family 'Roboto', sans-serif
+		font-size 1.6rem
+		outline none
+		color: #000
+		font-weight 600
+		@media screen and (max-width $grid-xs-max)
+			font-size 2rem
+
+	&__text
+		font-size 1.13rem
+		font-family 'Roboto', sans-serif
+		color #808080
+		padding-top: 0.4em
+		@media screen and (max-width $grid-xs-max)
+			font-size 1.4rem
+
+	&__link-call
+		font-family 'Roboto', sans-serif
+		padding 0.7em
+		border: 1px solid #00ccff
+		border-radius: 0.35em
+		font-size 0.97rem
+		color: #00ccff
+		letter-spacing: 0.1em
+		margin 0.3em 0 0 1.8em
+		@media screen and (max-width: $grid-sm-max)
+			margin 0.3em 0 0 0.8em
+		@media screen and (max-width $grid-xs-max)
+			font-size 1.3rem
+			padding 0.7em	
+		&:hover
+			background-color #00ccff
+			color: #fff
