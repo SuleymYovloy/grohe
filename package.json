@@ -4,7 +4,7 @@
   "description": "Используется связка `Gulp` + `Pug` + `Stylus` + `Bootstrap-4-Stylus` + `BrowserSync`",
   "main": "gulpfile.js",
   "dependencies": {
-    "browser-sync": "^2.27.10",
+    "browser-sync": "^2.27.11",
     "del": "^6.1.1",
     "gulp": "^4.0.2"
   },
